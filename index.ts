@@ -39,6 +39,8 @@ let operationAns = await inquirer.prompt([
         console.log("Insufficient Balance");
      }
      else if (myBalance -= amountAns.amount){
+        console.log("withdraw successfully!");
+        
         console.log(`your remaining balance is ${myBalance}`);
      }
     }
